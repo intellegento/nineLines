@@ -76,22 +76,27 @@
 		text-align: left;
 		color: rgba(40, 42, 51, 1);
 
+		&::before {
+			opacity: 0;
+			content: '';
+			position: absolute;
+			left: 2%;
+			width: 100%;
+			height: 100%;
+			background-image: url("../../images/menuActive.svg");
+			background-repeat: no-repeat;
+			z-index: -1;
+			transition: all .3s;
+		}
 
 		&:hover {
-			&::before {
-				content: '';
-				position: absolute;
-				left: 2%;
-				width: 100%;
-				height: 100%;
-				background-image: url("../../images/menuActive.svg");
-				background-repeat: no-repeat;
-				z-index: -1;
+			&:before {
+				opacity: .9;
 			}
 		}
 
 		@include active {
-			color: $color-black;
+			color: #58013d;
 		}
 	}
 

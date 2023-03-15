@@ -1,44 +1,134 @@
-.home {
-	padding: 80px 20px;
+.main {
+	padding: 130px 20px 0;
+}
+.aboutMeSection {
+	margin: 0 auto 40px auto;
+	max-width: 500px;
+	font-size: 20px;
+	line-height: 26px;
+		
+	&:after {
+		content: '';
+			position: absolute;
+			top: 68vh;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url("../../images/aboutMeSectionBackground.svg");
+			background-repeat: no-repeat;
+			z-index: -1;
+			transition: all .3s;
+	}
 
-	&__picture {
-		display: block;
-		margin: 0 auto 40px;
-		max-width: 500px;
-		opacity: 0;
-		transition: $duration-normal;
+	h1 {
+		font-family: $font-family-SFPro;
+		font-size: 28px;
+		line-height: 135%;
+		font-weight: 700;
+		padding: 0;
+		margin: 0;
+	}
+	span {
+		font-family: $font-family-SFPro;
+		font-size: 18px;
+		line-height: 135%;
+		padding: 0;
+		margin: 0;
+	}
+	p {
+		font-family: $font-family-SFPro;
+		font-size: 14px;
+		line-height: 135%;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	a {
+		text-decoration: underline;
 
-		&[data-loaded="true"] {
-			opacity: 1;
-		}
-
-		&--2 {
-			margin-top: 40px;
-			margin-bottom: 0;
+		@include hover {
+			text-decoration: none;
 		}
 	}
 
-	&__text {
-		margin: 0 auto;
-		max-width: 500px;
-		font-size: 20px;
-		line-height: 26px;
+	code {
+		padding: 5px;
+		background-color: $color-gray;
+	}
 
-		a {
-			text-decoration: underline;
-
-			@include hover {
-				text-decoration: none;
+	&__contacts {
+		margin-bottom: 15px;
+		li {
+			font-family: $font-family-SFPro;
+			font-size: 14px;
+			line-height: 135%;
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
+	}
+	&__socials {
+		display: flex;
+		flex-direction: row;
 
-		code {
-			padding: 5px;
-			background-color: $color-gray;
+		li {
+			padding-right: 20px;
+
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 	}
 
 	@include desktop {
 		padding: 100px 0;
+	}
+
+	// &__picture {
+	// 	display: block;
+	// 	margin: 0 auto 40px;
+	// 	max-width: 500px;
+	// 	opacity: 0;
+	// 	transition: $duration-normal;
+
+	// 	&[data-loaded="true"] {
+	// 		opacity: 1;
+	// 	}
+
+	// 	&--2 {
+	// 		margin-top: 40px;
+	// 		margin-bottom: 0;
+	// 	}
+	// }
+
+	
+}
+
+.expirienceSection {
+
+	.expirienceItem {
+			font-family: $font-family-SFPro;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+		&__date  {
+			color: rgba(130, 130, 130, 1);
+			padding-bottom: 8px;
+		}
+	
+		&__title {
+			font-weight: 700;
+			color: rgba(40, 42, 51, 1);
+			padding-bottom: 8px;
+		}
+		&__location {
+			color: rgba(40, 42, 51, 1);
+			padding-bottom: 8px;	
+		}
+		&__description {
+			color: rgba(40, 42, 51, 1);
+			padding-bottom: 8px;
+		}
 	}
 }

@@ -1,33 +1,85 @@
-main.home
-	+lazyPicture({
-		src: `${baseDir}images/mem.jpg`,
-		alt: 'Мемчик',
-	}).home__picture#hello
+- var facebook = "images/facebookIcon.svg"
+- var linkedin = "images/linkedin.svg"
+- var telegram = "images/telegramIcon.svg"
+main.main
 
-	p.home__text#necessarily
-		| Это стартовый шаблон для верстки!
+	section.aboutMeSection#hello
+		//- #necessarily
+		h1
+			| Шпреер Геннадий
+		span
+			| Frontend Developer
 		br
 		br
-		| Обязательно посмотри реализацию:
-		br
-		| pug в папке #[code pug/(components|pages)],
-		br
-		| js в папке #[code js/(components|modules|pages)],
-		br
-		| scss в папке #[code scss/(components|pages)]
-		br
-		br
-		| Не используемые части кода/компонентов можно просто отключить (удалять не рекомендуется)
-		br
-		br
-		| Не забывай читать #[a(href="https://github.com/ninelines-team/ninelines-docs" target="_blank") документацию]!
+		p 
+			|Я заинтересован в разработке и стремлюсь стать ценным членом команды. Люблю учиться и принимать вызовы, 
+			|чтобы постоянно развиваться. Я стремлюсь, чтобы, качество моей работы всегда было на высшем уровне, я 
+			|стараюсь соблюдать все задачи и требования. Готов работать с большими объемами заданий. Мой энтузиазм, 
+			|ответственность и умение работать в команде сделают меня ценным дополнением к любой разработческой команде. 
+			|Готов принимать вызовы, чтобы достичь успеха вместе с командой и улучшить свои навыки в этой области.
+		
+		ul.aboutMeSection__contacts
+			li 
+				a(href="mailto:intellegento@gmail.com", target="_blank") intellegento@gmail.com
+			li 
+				a(href="tel:+996550311391", target="_blank") +996(550)311-391
+			li 
+				| г. Бишкек
 
+		ul.aboutMeSection__socials
+			li 
+				a(href="https://www.facebook.com/g.shpreer", target="_blank") 
+					img(src=facebook)
+			li 
+				a(href="https://www.linkedin.com/in/g-shpreer/", target="_blank") 
+					img(src=linkedin)
+			li 
+				a(href="https://t.me/intellegento", target="_blank")
+					img(src=telegram) 
+
+	section.expirienceSection#necessarily
+		h2
+			| Опыт работы
+
+		div.expirienceItem
+			span.expirienceItem__date 
+				| 10.2021 - настоящее время
+			br
+			span.expirienceItem__title 
+				| TrixCode LLC 
+			br
+			span.expirienceItem__location
+				| г. Бишкек 
+			br
+			ul.expirienceItem__description 
+				li 
+					| - Участвовал в создании новых проектов с использованием React и Next JS и различных библиотек, таких как, GSAP, AnimateJS, и многих других
+				li 
+					| - Участвовал в создании проекта на Shopify (liquid)
+				li 
+					| - Получил опыт работы с различными CMS, включая Shopify и WordPress
+				li 
+					| - Переносил крупноный проект с WordPress и GatsbyJS 2.6 на React и Strapi
+				li 
+					| - Увеличил производительность и оценки готового продукта в Lighthouse в различных метриках
+				li 
+					| - Самостоятельно разработал небольшого проекта 
+				li 
+					| - Руководил небольшой командой на начальных этапах разработки нового проекта, включая постановку задач, оценку сроков и отслеживание этапов разработки. 
+				li 
+					| - Создавал E-mail тимплэйты для рассылок клиентам 
+				li 
+					| - Участвовал в наполнении готовых проектов как на стороне фронтэнда так и, на стороне бэкэнда
+				li 
+					| - Разработал и оформил тестового задания для интернов
+			br
+			a.expirienceItem__link(href="") assdd 
 	//- picture.home__picture.home__picture--2#bye
-	+lazyPicture({
-		src: `${baseDir}images/mem-2.jpg`,
-		alt: 'Мемчик 2',
-	}, [
-		{
-			srcset: `${baseDir}images/mem-2.jpg`,
-		}
-	]).home__picture.home__picture--2#bye
+	//- +lazyPicture({
+	//- 	src: `${baseDir}images/mem-2.jpg`,
+	//- 	alt: 'Мемчик 2',
+	//- }, [
+	//- 	{
+	//- 		srcset: `${baseDir}images/mem-2.jpg`,
+	//- 	}
+	//- ]).home__picture.home__picture--2#bye
