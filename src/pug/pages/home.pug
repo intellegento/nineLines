@@ -1,6 +1,8 @@
 - var facebook = "images/facebookIcon.svg"
 - var linkedin = "images/linkedin.svg"
 - var telegram = "images/telegramIcon.svg"
+- var trixcode = "images/trixcode.png"
+- var fl = "images/fl.png"
 main.main
 
 	section.aboutMeSection#hello
@@ -42,14 +44,19 @@ main.main
 			| Опыт работы
 
 		div.expirienceItem
-			span.expirienceItem__date 
+			p.expirienceItem__date 
 				| 10.2021 - настоящее время
 			br
-			span.expirienceItem__title 
-				| TrixCode LLC 
+			p.expirienceItem__title 
+				| Frontend developer
 			br
-			span.expirienceItem__location
-				| г. Бишкек 
+			div.expirienceItem__company 
+				img(src=trixcode)
+				div.expirienceItem__company__title
+					p.expirienceItem__company__title__name
+						|TrixCode LLC 
+					p.expirienceItem__company__title__location
+						| г. Ьишкек, Кыргызстан
 			br
 			ul.expirienceItem__description 
 				li 
@@ -73,7 +80,54 @@ main.main
 				li 
 					| - Разработал и оформил тестового задания для интернов
 			br
-			a.expirienceItem__link(href="") assdd 
+			a.expirienceItem__link(href="https://trixcode.io/") trixcode.io
+
+		div.expirienceItem
+			p.expirienceItem__date 
+				| 01.2021- 10.2021
+			br
+			p.expirienceItem__title 
+				| ОБУЧЕНИЕ FRONTEND РАЗРАБОТКЕ 
+			br
+			div.expirienceItem__company 
+				div.expirienceItem__company__title
+					p.expirienceItem__company__title__name
+						|
+					p.expirienceItem__company__title__location
+						| г. Ьишкек, Кыргызстан
+			br
+			ul.expirienceItem__description 
+				li 
+					| -jewelery
+					br
+					| Тестовое задание. В проекте использовались HTML, CSS, JavaScript(Next.JS), AnimeJS
+				li 
+					| -Todo (список дел) 
+					br
+					| Выпускная работа на курсе компьютерной грамотности проекта 50к программистов. В проекте использовались Python(Django) + HTML&CSS
+				li 
+					| -Covid-19
+					br
+					| Самостоятельная работа под контролем ментора. В проекте были использованы HTML, SCSS, JavaScript, Bootstrap, WebPack и немного JS,, при работе использовался GitHub. Проект в процессе завершения, на данный момент он занял 1,5 месяца.
+
+		div.expirienceItem
+			p.expirienceItem__date 
+				| 05.2010 – 09.2021
+			br
+			p.expirienceItem__title 
+				| Графический дизайнер(FL.ru, freelancer.com)
+			br
+			div.expirienceItem__company 
+				img(src=fl)
+				div.expirienceItem__company__title
+					p.expirienceItem__company__title__name
+						| FL.ru
+					p.expirienceItem__company__title__location
+						| г. Ьишкек, Кыргызстан
+			br
+			ul.expirienceItem__description 
+				li 
+					| Поиск и работа с клиентами, обсуждение и решение поставленных целей, поиск оптимальных решений, ведение переписок, создание акшнскриптов для Photoshop, решение спорных моментов и поиск компромиссов, создание печатной и цифровой продукции, контент менеджмент и многое, многое другое	
 	//- picture.home__picture.home__picture--2#bye
 	//- +lazyPicture({
 	//- 	src: `${baseDir}images/mem-2.jpg`,
