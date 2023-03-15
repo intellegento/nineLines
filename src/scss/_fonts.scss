@@ -1,0 +1,8 @@
+// stylelint-disable no-empty-source
+// @include font-face("../fonts/FontName/FontName", "FontName", 400, normal);
+@font-face {
+    src: url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+    font-family: "SFPro";
+    font-weight: 400;
+    font-style: normal;
+}

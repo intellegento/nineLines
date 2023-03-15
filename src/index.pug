@@ -1,0 +1,22 @@
+extends pug/base
+
+prepend vars
+	- title = 'TestTask'
+	- description = 'TestTask for NineLines'
+	- image = 'http://example.com/images/image.png'
+
+append vars
+	- link.icon16x16 = '/favicon_16x16.png'
+
+block content
+	include pug/data
+
+	.site
+		include pug/components/header
+
+		include pug/pages/home
+
+		include pug/components/footer
+
+	include pug/components/analytics
+	
