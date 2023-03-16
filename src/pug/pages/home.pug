@@ -3,6 +3,15 @@
 - var telegram = "images/telegramIcon.svg"
 - var trixcode = "images/trixcode.png"
 - var fl = "images/fl.png"
+- var educationImage = "images/educationImage.png"
+- var item1 = "images/item1.svg"
+- var item2 = "images/item2.svg"
+- var item3 = "images/item3.svg"
+- var item4 = "images/item4.svg"
+- var item5 = "images/item5.svg"
+- var item6 = "images/item6.svg"
+- var hands = "images/hands.png"
+
 
 
 main.main
@@ -129,6 +138,72 @@ main.main
 			ul.expirienceItem__description 
 				li 
 					| Поиск и работа с клиентами, обсуждение и решение поставленных целей, поиск оптимальных решений, ведение переписок, создание акшнскриптов для Photoshop, решение спорных моментов и поиск компромиссов, создание печатной и цифровой продукции, контент менеджмент и многое, многое другое	
+	
+	section.educationSection#education
+		div.educationSection__image
+			img(src = educationImage)
+		div.educationSection__infoBlock
+			h2
+				| Образование
+			div.educationSection__listItems
+				div.educationSection__item
+					img(src=item1)
+					span 
+						| 50 000 Programmers in KG 
+					p 
+						| Совместная программа Beeline и IT-academia, Frontend
+
+				div.educationSection__item
+					img(src=item2)
+					span 
+						| Responsive Web Design  
+					p 
+						| freeCodeCamp
+				div.educationSection__item
+					img(src=item3)
+					span 
+						| Современный JavaScript + Vue с нуля 
+					p 
+						| Udemy
+				div.educationSection__item
+					img(src=item4)
+					span 
+						| RSSchool
+					p 
+						| JS / FRONT-END
+				div.educationSection__item
+					img(src=item5)
+					span 
+						| https://code-basics.com/ru 
+					p 
+						| JS, CSS, HTML and others
+				div.educationSection__item
+					img(src=item6)
+					span 
+						| Б.Г.Т.У. им. Д.Ф. Устинова «ВОЕНМЕХ» 
+					p 
+						| Инженер-механик, Металлы и технологии обработки металлов давлением
+
+	section.skillsSection 
+		h2 
+			| Навыки
+		div.skillsSection__item 
+			span 
+				| Frontend 
+			p 
+				| HTML, CSS, SCSS, JS, React, Next.JS, GSAP, Anime.JS, Strapi, Bootstarp 
+				
+		div.skillsSection__item 
+			span 
+				| Additional 
+			p 
+				| Figma, Photoshop, Jira, Git 
+		div.skillsSection__item 
+			span 
+				| Languages 
+			p 
+				| Russian, English 
+		img(src=hands)
 	//- picture.home__picture.home__picture--2#bye
 	//- +lazyPicture({
 	//- 	src: `${baseDir}images/mem-2.jpg`,
