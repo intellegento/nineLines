@@ -1,4 +1,4 @@
-.educationSection {
+.education-section {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -19,7 +19,7 @@
 	&__image {
 
 	}
-	&__infoBlock {
+	&__info-block {
 		display: flex;
 		flex-direction: column;
 
@@ -31,7 +31,7 @@
 			margin-bottom: 15px;
 		}
 	}
-	&__listItems {
+	&__list-items {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;

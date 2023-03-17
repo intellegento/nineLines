@@ -1,34 +1,39 @@
-.expirienceSection {
-
-	.expirienceItem {
-		margin-bottom: 60px;
-		font-family: $font-family-SFPro;
+.expirience-section {
+	font-family: $font-family-SFPro;
+	h2 {
+		font-size: 20px;
+		line-height: 135%;
+		font-weight: 700;
+		margin-bottom: 5.33vw;
+	}
+	.expirience-item {
+		margin-bottom: 16vw;
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 17px;
+		line-height: 130%;
 		&__date  {
 			color: rgba(130, 130, 130, 1);
-			padding-bottom: 8px;
+			padding-bottom: 2.1vw;
 		}
 	
 		&__title {
 			font-weight: 700;
 			color: rgba(40, 42, 51, 1);
-			padding-bottom: 8px;
+			padding-bottom: 2.1vw;
 		}
 		&__company {
 			color: rgba(40, 42, 51, 1);
-			padding-bottom: 8px;
+			padding-bottom: 2.1vw;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: flex-start;
 			
 			img {
-				width: 30px;
-				height: 30px;
+				width: 8vw;
+				height: 8vw;
 				border-radius: 50%;
-				margin-right: 8px;
+				margin-right: 2.1vw;
 			}
 
 			&__title {
@@ -45,7 +50,7 @@
 		}
 		&__description {
 			color: rgba(40, 42, 51, 1);
-			padding-bottom: 8px;
+			padding-bottom: 2.1vw;
 		}
 	}
 }
