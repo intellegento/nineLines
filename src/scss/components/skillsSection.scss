@@ -1,9 +1,14 @@
+@import "../mixins/breakpoint";
+
 .skills-section {
 	display: flex;
 	flex-direction: column;
+	font-family: $font-family-SFPro;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 110%;
 
 	h2 {
-		font-family: $font-family-SFPro;
 		font-size: 20px;
 		line-height: 105%;
 		font-weight: 700;
@@ -15,8 +20,6 @@
 		margin-bottom: 5.33vw;
 
 		span {
-			font-family: $font-family-SFPro;
-			font-size: 14px;
 			font-weight: 700;
 			line-height: 110%;
 			text-align: left;
@@ -24,11 +27,15 @@
 		}
 
 		p {
-			font-family: $font-family-SFPro;
-			font-size: 14px;
-			font-weight: 400;
-			line-height: 110%;
 			text-align: left;
+		}
+	}
+
+	@include tablet {
+		font-size: 18px;
+	
+		h2 {
+			font-size: 24px;
 		}
 	}
 }
