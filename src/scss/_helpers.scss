@@ -1,6 +1,10 @@
 .is-hidden {
 	// stylelint-disable-next-line declaration-no-important
 	display: none !important;
+
+	@include desktop {
+		display: block !important;
+	}
 }
 
 .is-hide {

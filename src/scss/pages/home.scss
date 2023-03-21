@@ -1,3 +1,13 @@
 .main {
 	padding: 130px 20px 0;
+
+	@include desktop {
+		padding: 290px 150px 0;
+
+		article {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
 }

@@ -62,4 +62,38 @@
 			font-size: 24px;
 		}
 	}
+
+	@include desktop {
+		width: 49.5%;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 130%;
+		margin-bottom: 13.8vw;
+		h2 {
+			font-size: 24px;
+			margin-bottom: 2.1vw;
+		}
+		.expirience-item {
+			margin-bottom: 4.1vw;
+			
+			&__date  {
+				color: rgba(130, 130, 130, 1);
+				padding-bottom: .55vw;
+			}
+		
+			&__title {
+				padding-bottom: .55vw;
+			}
+			&__company {
+				padding-bottom: .55vw;
+				
+				img {
+					width: 2.1vw;
+					height: 2.1vw;
+					border-radius: 50%;
+					margin-right: .55vw;
+				}
+			}
+		}
+	}
 }
