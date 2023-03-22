@@ -7,44 +7,45 @@
 - var item6 = "images/item6.svg"
 
 section.education-section#education
-	div.education-section__image
-		img(src = educationImage)
-	div.education-section__info-block
+	div.education-section__image(data-scroll-section)
+		img(data-scroll='', data-scroll-speed='-5', data-scroll-position="top")(src = educationImage)
+
+	div.education-section__info-block(data-scroll-section)
 		h2
 			| Образование
-		div.education-section__list-items
-			div.education-section__item
+		div.education-section__list-items(data-scroll)
+			div(data-scroll data-scroll-class="appear" data-scroll-repeat="true").education-section__item
 				img(src=item1)
 				span 
 					| 50 000 Programmers in KG 
 				p 
 					| Совместная программа Beeline и IT-academia, Frontend
 
-			div.education-section__item
+			div(data-scroll data-scroll-class="appear" data-scroll-repeat="true").education-section__item
 				img(src=item2)
 				span 
 					| Responsive Web Design  
 				p 
 					| freeCodeCamp
-			div.education-section__item
+			div(data-scroll data-scroll-class="appear" data-scroll-repeat="true").education-section__item
 				img(src=item3)
 				span 
 					| Современный JavaScript + Vue с нуля 
 				p 
 					| Udemy
-			div.education-section__item
+			div(data-scroll data-scroll-class="appear" data-scroll-repeat="true").education-section__item
 				img(src=item4)
 				span 
 					| RSSchool
 				p 
 					| JS / FRONT-END
-			div.education-section__item
+			div(data-scroll data-scroll-class="appear" data-scroll-repeat="true").education-section__item
 				img(src=item5)
 				span 
 					| https://code-basics.com/ru 
 				p 
 					| JS, CSS, HTML and others
-			div.education-section__item
+			div(data-scroll data-scroll-class="appear" data-scroll-repeat="true").education-section__item
 				img(src=item6)
 				span 
 					| Б.Г.Т.У. им. Д.Ф. Устинова «ВОЕНМЕХ» 

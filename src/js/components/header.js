@@ -59,7 +59,7 @@ function toggleMenu(event) {
 
 function init() {
 	helpers.$header = $('.header');
-
+	console.log("header");
 	$('.js-burger').on('click.header', toggleMenu);
 
 	helpers.$document
