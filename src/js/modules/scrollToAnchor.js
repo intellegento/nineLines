@@ -5,7 +5,6 @@ import helpers from '../helpers';
 * Модуль "Плавный переход к якорю"
 */
 const init = () => {
-	console.log("scroll to")
 	helpers.$document.on('click.anchor', '.js-to-anchor', (e) => {
 		e.preventDefault();
 		e.stopPropagation();

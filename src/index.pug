@@ -10,10 +10,11 @@ append vars
 
 block content
 	include pug/data
-
-	.site
+	include pug/components/backToTop
+	.site(data-scroll-container='')
+		
 		include pug/components/header
-
+		
 		include pug/pages/home
 
 	include pug/components/analytics

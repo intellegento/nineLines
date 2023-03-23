@@ -8,6 +8,8 @@ import header from './components/header';
 import lazyLoading from './modules/lazyLoading';
 import scrollToAnchor from './modules/scrollToAnchor';
 import locomotiveScroll from './modules/locomotiveScroll';
+import backToTop from './components/backToTop';
+
 
 
 
@@ -18,5 +20,5 @@ scrollToAnchor.init();
 
 header.init();
 lazyLoading.init();
-
 locomotiveScroll.init();
+backToTop.init();
