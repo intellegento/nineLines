@@ -8,7 +8,7 @@ import header from "./components/header";
 import lazyLoading from "./modules/lazyLoading";
 import scrollToAnchor from "./modules/scrollToAnchor";
 import locomotiveScroll from "./modules/locomotiveScroll";
-// import backToTop from "./components/backToTop";
+import backToTop from "./components/backToTop";
 
 ieFix();
 vhFix();
@@ -19,4 +19,5 @@ header.init();
 lazyLoading.init();
 console.log('main');
 locomotiveScroll.init();
-// backToTop.init();
+// progressBar.init();
+backToTop.init();

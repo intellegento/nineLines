@@ -13,7 +13,7 @@ const scroller = new LocomotiveScroll({
 const init = () => {
 	(function ($) {
 		$(document).ready(function () {
-			var progressPath = document.querySelector(".progress-wrap path");
+			var progressPath = document.querySelector(".progress-wrap svg path");
 			console.log(progressPath, "progre");
 			var pathLength = progressPath.getTotalLength();
 			progressPath.style.transition =
