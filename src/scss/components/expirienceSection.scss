@@ -11,6 +11,8 @@
 	}
 	.expirience-item {
 		margin-bottom: 16vw;
+		opacity: 0;
+		transition: opacity 2s;
 		
 		&__date  {
 			color: rgba(130, 130, 130, 1);
@@ -75,6 +77,8 @@
 		}
 		.expirience-item {
 			margin-bottom: 4.1vw;
+			opacity: 0;
+			transition: opacity 2s;
 			
 			&__date  {
 				color: rgba(130, 130, 130, 1);
