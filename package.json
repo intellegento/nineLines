@@ -73,6 +73,7 @@
 		"jquery": "3.6.0",
 		"locomotive-scroll": "4.1.4",
 		"lozad": "1.16.0",
+		"ninelines-preloader": "1.3.6",
 		"ninelines-sharing": "1.5.8",
 		"ninelines-ua-parser": "1.1.6",
 		"normalize.css": "8.0.1",

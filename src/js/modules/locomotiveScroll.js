@@ -27,7 +27,7 @@ const init = () => {
 
 
 			scroller.on("scroll", ({ limit, scroll }) => {
-				const progress = pathLength - (scroll.y / limit.y) * 189;
+				const progress = pathLength - (scroll.y / limit.y) * 94;
         const numProgress = (((scroll.y / limit.y)) * 100).toFixed(0);
 				progressPath.style.strokeDashoffset = `${progress}`;
         numElement.innerText = `${numProgress}`;

@@ -3,12 +3,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
+	bottom: 20px;
+	right: 20px;
+	opacity: .5;
+	transition: all .3s;
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .box {
@@ -30,7 +36,7 @@
 }
 
 .box .number .num {
-	font-size: 25px;
+	font-size: 10px;
 	font-weight: bold;
 }
 
@@ -45,9 +51,9 @@
 
 .circle {
 	stroke: url(#gradientStyle);
-	stroke-width: 5px;
-	stroke-dasharray: 189;
-	stroke-dashoffset: 189;
+	stroke-width: 2px;
+	stroke-dasharray: 94;
+	stroke-dashoffset: 94;
 	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;

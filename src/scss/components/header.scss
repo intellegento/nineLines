@@ -77,6 +77,16 @@
 		text-align: left;
 		color: rgba(40, 42, 51, 1);
 
+		.active {
+			color: #58013d;
+		}
+
+		&:first-child{
+			&:active {
+				color: pink;
+			}
+		}
+
 		&::before {
 			opacity: 0;
 			content: '';
@@ -96,9 +106,6 @@
 			}
 		}
 
-		@include active {
-			color: #58013d;
-		}
 	}
 
 	&__burger {
@@ -212,7 +219,7 @@
 			}
 	
 			@include active {
-				color: #58013d;
+				color: #99046a;
 			}
 		}
 	
