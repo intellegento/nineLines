@@ -9,6 +9,7 @@ import lazyLoading from "./modules/lazyLoading";
 import scrollToAnchor from "./modules/scrollToAnchor";
 import locomotiveScroll from "./modules/locomotiveScroll";
 
+
 ieFix();
 vhFix();
 actualYear();
