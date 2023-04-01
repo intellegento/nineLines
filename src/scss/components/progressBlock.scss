@@ -3,8 +3,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 40px;
-	height: 40px;
+	width: 32px;
+	height: 32px;
 	border-radius: 50%;
 	position: fixed;
 	bottom: 20px;
@@ -23,8 +23,8 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: calc(100% - 50px);
-	height: calc(100% - 50px);
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
 	// background-color: #fff;
 }
@@ -32,7 +32,7 @@
 
 
 .box .number span {
-	color: #462c98;
+	color: #3d1010;
 }
 
 .box .number .num {
@@ -50,6 +50,9 @@
 }
 
 .circle {
+	r: 15px;
+	cx: 16px;
+	cy: 16px;
 	stroke: url(#gradientStyle);
 	stroke-width: 2px;
 	stroke-dasharray: 94;
@@ -60,4 +63,77 @@
 	transition: 2s stroke-dashoffset;
 }
 
+.up-arrow {
+	position: absolute;
+	top: calc(50% - 10px);
+	left: calc(50% - 8px);
+	width: 28px;
+	height: 28px;
+}
 
+@media (min-width: 1440px) {
+	.progressBlock {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		position: fixed;
+		bottom: 25px;
+		right: 25px;
+		opacity: .5;
+		transition: all .3s;
+	
+		&:hover {
+			opacity: 1;
+		}
+	}
+	
+	.box {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		// background-color: #fff;
+	}
+	
+	
+	
+	.box .number span {
+		color: #531717;
+	}
+	
+	.box .number .num {
+		font-size: 10px;
+		font-weight: bold;
+	}
+	
+	
+	.svg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		fill: none;
+		transform: rotate(-90deg);
+	}
+	
+	.circle {
+		r: 24px;
+		cx: 25px;
+		cy: 25px;
+		stroke: url(#gradientStyle);
+		stroke-width: 2px;
+		stroke-dasharray: 151;
+		stroke-dashoffset: 151;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+		transition: 2s stroke-dashoffset;
+	}
+}

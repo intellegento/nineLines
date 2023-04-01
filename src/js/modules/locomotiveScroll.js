@@ -10,12 +10,14 @@ const scroller = new LocomotiveScroll({
 	},
 });
 
+
 const init = () => {
 	(function ($) {
 		$(document).ready(function () {
-			var progressPath = document.querySelector(".progressBlock svg circle");
-			var pathLength = progressPath.getTotalLength();
-      var numElement = document.querySelector(".num");
+			const progressPath = document.querySelector(".progressBlock svg circle");
+			const pathLength = progressPath.getTotalLength();
+      		const numElement = document.querySelector(".num");
+	  		const upArrow = document.querySelector(".up-arrow");
 			progressPath.style.transition =
 			progressPath.style.WebkitTransition = "none";
 			progressPath.style.strokeDasharray = pathLength + " " + pathLength;
@@ -25,16 +27,28 @@ const init = () => {
 				progressPath.style.WebkitTransition =
 					"stroke-dashoffset 10ms linear";
 
-
 			scroller.on("scroll", ({ limit, scroll }) => {
-				const progress = pathLength - (scroll.y / limit.y) * 94;
-        const numProgress = (((scroll.y / limit.y)) * 100).toFixed(0);
+				const progress = pathLength - (scroll.y / limit.y) * pathLength;
+        		const numProgress = (((scroll.y / limit.y)) * 100).toFixed(0);
+				if (numProgress >= 100) {
+					numElement.style.display = "none";
+					upArrow.style.display = "block";
+				  } else {
+					numElement.style.display = "block";
+					upArrow.style.display = "none";
+				  }
 				progressPath.style.strokeDashoffset = `${progress}`;
-        numElement.innerText = `${numProgress}`;
+        		numElement.innerText = `${numProgress}`;
 			});
+			upArrow.addEventListener("click", () => {
+				console.log("click")
+			  });
 		});
+		
 	})(jQuery);
 };
+
+
 
 const destroy = () => {
 	$(".progress-wrap").off("click");
