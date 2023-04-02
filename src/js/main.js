@@ -8,6 +8,7 @@ import header from "./components/header";
 import lazyLoading from "./modules/lazyLoading";
 import scrollToAnchor from "./modules/scrollToAnchor";
 import locomotiveScroll from "./modules/locomotiveScroll";
+import sharing from "./components/sharing";
 
 
 ieFix();
@@ -18,5 +19,6 @@ scrollToAnchor.init();
 header.init();
 lazyLoading.init();
 locomotiveScroll.init();
+sharing.init();
 
 
