@@ -1,29 +1,36 @@
 import html2canvas from 'html2canvas';
 
 function init() {
-    function createImage() {
-        html2canvas(document.querySelector("#sharing-container")).then(canvas => {
-          const imageData = canvas.toDataURL();
-          console.log(imageData);
-          const shareUrl = `https://example.com/share?image=${encodeURIComponent(imageData)}`;
-          window.open(shareUrl, "_blank");
+ // Для кнопки LinkedIn
+    document.getElementById('linkedin-share').addEventListener('click', function() {
+        console.log("cclick linkedin")
+        html2canvas(document.body).then(function(canvas) {
+            const base64Url = canvas.toDataURL('image/png');
+            const linkedinShareUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href) + '&media=' + encodeURIComponent(base64Url);
+            window.open(linkedinShareUrl, '_blank');
         });
-      }
-      
-      function createLinkedInShare() {
-        const sharingContainer = document.querySelector("#sharing-container");
-      
-        html2canvas(sharingContainer).then(canvas => {
-          const imageData = canvas.toDataURL();
-          const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}&media=${encodeURIComponent(imageData)}&title=My LinkedIn Share`;
-          console.log(linkedInShareUrl)
-          window.open(linkedInShareUrl, "_blank");
+  });
+  
+  // Для кнопки Telegram
+    document.getElementById('telegram-share').addEventListener('click', function() {
+        console.log("click telegram")
+        html2canvas(document.getElementById('hello'),{scale:0.4}).then(function(canvas, scale="0.4") {
+        const base64Url = canvas.toDataURL('image/jpg');
+        const telegramShareUrl = 'https://t.me/share/url?url=' + encodeURIComponent(window.location.href) + '&photo=' + encodeURIComponent(base64Url);
+        window.open(telegramShareUrl, '_blank');
         });
-      }
-      
-      // Находим кнопку и назначаем на нее обработчик клика
-      const button = document.querySelector("#share-button-linkedin");
-      button.addEventListener("click", createImage);
+  });
+  
+  // Для кнопки Facebook
+    document.getElementById('facebook-share').addEventListener('click', function() {
+        html2canvas(document.body).then(function(canvas) {
+            console.log("click facebook")
+        const base64Url = canvas.toDataURL('image/png');
+        const facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href) + '&picture=' + encodeURIComponent(base64Url);
+        window.open(facebookShareUrl, '_blank');
+        });
+  });
+  
 }
 
 export default {

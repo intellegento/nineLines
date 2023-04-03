@@ -41,7 +41,7 @@ const init = () => {
         		numElement.innerText = `${numProgress}`;
 			});
 			upArrow.addEventListener("click", () => {
-				console.log("click")
+				scroller.scrollTo(0)
 			  });
 		});
 		

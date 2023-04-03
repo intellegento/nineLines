@@ -152,9 +152,13 @@
 	
 			li {
 				padding-right: 1.38vw;
-	
+				
 				&:last-child {
 					padding-right: 0;
+				}
+				button {
+					border: none;
+					background: none;
 				}
 			}
 		}

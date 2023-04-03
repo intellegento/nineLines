@@ -32,7 +32,7 @@
 
 
 .box .number span {
-	color: #3d1010;
+	color: rgb(97, 96, 96);
 }
 
 .box .number .num {
@@ -66,9 +66,15 @@
 .up-arrow {
 	position: absolute;
 	top: calc(50% - 10px);
-	left: calc(50% - 8px);
-	width: 28px;
-	height: 28px;
+	left: calc(22% - 8px);
+	width: 48px;
+	height: 48px;
+	z-index: 100;
+	cursor: pointer;
+
+	span {
+		padding: 15px;
+	}
 }
 
 @media (min-width: 1440px) {
@@ -106,7 +112,7 @@
 	
 	
 	.box .number span {
-		color: #531717;
+		color: rgb(97, 96, 96);
 	}
 	
 	.box .number .num {
