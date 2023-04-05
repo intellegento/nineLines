@@ -1736,12 +1736,12 @@ html {
 
 .main {
   padding: 130px 20px 0; }
-  .main article {
+  .main .article {
     height: auto; }
   @media (min-width: 1025px) {
     .main {
       padding: 290px 150px 0; }
-      .main article {
+      .main .article {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
