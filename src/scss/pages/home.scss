@@ -2,14 +2,14 @@ html{scroll-behavior:smooth}
 .main {
 	padding: 130px 20px 0;
 
-	article {
+	.article {
 		height: auto;
 	}
 
 	@include desktop {
 		padding: 290px 150px 0;
 
-		article {
+		.article {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;

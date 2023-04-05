@@ -50,6 +50,7 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+			
 		}
 	}
 	&__socials {
@@ -61,6 +62,11 @@
 
 			&:last-child {
 				padding-right: 0;
+			}
+
+			button {
+				background: none;
+				border: none;
 			}
 		}
 	}

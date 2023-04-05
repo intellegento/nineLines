@@ -65,10 +65,10 @@
 
 .up-arrow {
 	position: absolute;
-	top: calc(50% - 10px);
-	left: calc(22% - 8px);
-	width: 48px;
-	height: 48px;
+	top: calc(52% - 10px);
+	left: calc(5% - 8px);
+	width: 32px;
+	height: 32px;
 	z-index: 100;
 	cursor: pointer;
 
@@ -109,7 +109,15 @@
 		// background-color: #fff;
 	}
 	
-	
+	.up-arrow {
+		position: absolute;
+		top: calc(50% - 10px);
+		left: calc(22% - 8px);
+		width: 48px;
+		height: 48px;
+		z-index: 100;
+		cursor: pointer;
+	}
 	
 	.box .number span {
 		color: rgb(97, 96, 96);
